@@ -73,7 +73,13 @@ body {
 }
 .paragraph {
     font-size: $default-font-size;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #777;
     &:not(:last-child){
-        margin-bottom: 3rem;
+        margin-bottom: 1rem;
+
     }
 }
