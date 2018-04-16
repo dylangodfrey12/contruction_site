@@ -1,0 +1,33 @@
+
+/* border-box change box model so border and padding isnt added to total height of box*/
+*,
+*::after,
+*::before  {
+    margin: 0;
+    padding: 0;
+    /*makes boxing in body element inheritable for all nested elements */
+    box-sizing: inherit;
+}
+/* change root font size */
+/* 1 rem = 10px 10px =10/16px see below (because we set to 10px easy for calculations)*/
+html {
+    
+    font-size: 62.5%;   //1 rem = 10px = 62.5%
+ 
+    @include respond(tab-land) {
+        font-size: 56.25%; //1rem =9px, 9/16 = 56.25%
+    }
+    @include respond(tab-port) {
+        font-size: 50%; //1rem = 8px, 8/16 = 50%
+    }
+    @include respond(big-desktop) {
+        font-size: 75%; //1rem = 12px, 12/16 = 75%
+    }
+}
+/* everything inherits from body selector */
+body {
+    box-sizing: border-box;
+    padding: 3rem;
+    @include respond(tab-port) {
+        padding: 0rem;    }
+}

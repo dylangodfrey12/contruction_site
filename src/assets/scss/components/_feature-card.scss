@@ -1,0 +1,55 @@
+.section-features {
+    margin: 50px;
+     backface-visibility: hidden;
+}
+
+.feature-box {
+  background-color: black;
+  opacity: .8;
+  font-size: 1.5rem;
+ 
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 2.5rem 5rem black;
+  transition: transform .3s;
+}
+  .feature-box__icon{
+      font-size: 6rem;
+      margin-bottom: .5rem;
+      display: inline-block;
+      -webkit-background-clip: text;
+      color: transparent;
+
+  
+  }
+  .feature-box:hover {
+      transform: translateY(-1.5rem) scale(1.03);
+  }
+  .feature-box__text {
+    color: white;
+  }
+  .feature-picture {
+    background-size: cover;
+    height: 20rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+
+    .feature-picture--1 {
+        background-image: linear-gradient(to right bottom, green, rgba(228, 123, 25, 0.671)),
+                            url(../images/houses3-sm.jpeg);
+    }
+
+    .feature-picture--2 {
+      background-image: linear-gradient(to right bottom, lightblue, rgba(228, 123, 25, 0.671)),
+                          url(../../images/houses2-sm.jpeg);
+  }
+
+  .feature-picture--3 {
+    background-image: linear-gradient(to right bottom, blue, rgba(228, 123, 25, 0.671)),
+                        url(../images/houses-sm.jpeg);
+}
+  

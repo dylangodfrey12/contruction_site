@@ -1,0 +1,112 @@
+.section-book {
+    padding: 2rem 0;
+    background-image: linear-gradient(to right bottom, green, blue);
+
+}
+.book {
+    background-image: linear-gradient(105deg,
+     rgba(255,255,255, .9) 0%,
+      rgba(255,255,255, .9) 50%,
+      transparent 50%),
+      url(../media/images/houses3-sm.jpeg);
+    background-size: auto;
+    border-radius: 2px;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0, .15);
+    height: 100%;
+}
+.book__form {
+    width: 50%;
+    padding: 0rem;
+}
+.form__group:not(:last-child) {
+    margin-bottom: 2rem;
+}
+.form__input {
+    font-size: 1.6rem;
+    color: inherit;
+    font-family: inherit;
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    background-color: rgba(white,.5);
+    border: none;
+    border-bottom: 3px solid transparent;
+    width: 90%;
+    display: block;
+    transition: all .3s; 
+}
+
+
+
+    .form__label {
+        font-size: 1.2rem;
+        font-weight: 700;
+        margin-left: 2rem;
+        margin-top: .7rem;
+        display: block;
+        transition: all .3s;
+    }
+    .form__input:placeholder-shown + .form__label {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-4rem);
+    }
+
+    .form__radio-group {
+        width: 49%;
+        display: inline-block;
+
+    }
+
+    .form__radio-input {
+        display: none;
+    }
+
+    .form__radio-label {
+        font-size: 12px;
+        cursor: pointer;
+        position: relative;
+        padding-left: 4.5rem;
+    }
+
+    .form__radio-button {
+        height: 3rem;
+        width: 3rem;
+        border: 5px solid steelblue;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: -.4rem;
+    }
+        .form__radio-button::after {
+            content: "";
+            display: block;
+            height: 1.3rem;
+            width: 1.3rem;
+           
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: steelblue;
+            opacity: 0;
+            transition: opacity .2s;
+        }
+
+        
+        .form__radio-input:checked + .form__radio-label .form__radio-button::after{
+            opacity: 1;
+    }
+
+.form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(black,.1);
+    border-bottom: 3px solid steelblue;
+}
+.form__input:focus::-webkit-input-placeholder {
+    color: gray;
+}
+.form__input:focus:invalid {
+    border-bottom: 3px solid orangered;
+}
