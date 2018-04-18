@@ -1,0 +1,9 @@
+.section-details {
+    background-color: $color-grey-light-1;
+    padding: 5vh 0 5vh 0;
+    
+
+    @include respond(tab-port) {
+        padding: 2.5vh 0 2.5vh 0;
+    }
+}
