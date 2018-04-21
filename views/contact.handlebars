@@ -1,4 +1,5 @@
 
+
 <!doctype html>
 <html class="no-js" lang="en">
   <head>
@@ -8,9 +9,13 @@
     <title>Foundation for Sites</title>
     <link rel="stylesheet" href="/dist/assets/css/app.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.0/handlebars.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  
   </head>
   <body>
+  
     <div class="top-bar" style="height: 40px;">
       <div class="top-bar-left">
        <ul class="menu">
@@ -105,15 +110,19 @@
                     <li class="orbit-slide is-active">
                         <figure class="orbit-figure">
                           <div class="orbit-image bg-video">
+                               
+                            <div id="handlebars-demo" type="text/x-handlebars-template">
                               <video class="bg-video" autoplay muted loop>
-                                 
-                                  <source src="../src/assets/videos/ariel.mp4" type="video/mp4" alt="video of houses roofs">
-                                  <source src="../dist/assets/videos/ariel.webm" type="video/webm">
+                                  <source src="/dist/assets/videos/ariel.mp4" type="video/mp4" alt="video of houses roofs">
+                                  <source src="/dist/assets/videos/ariel.mp4" type="video/webm">
                                       Browser is not supported
                               </video>
+                            </div>
+                            
                           </div>
                         </figure>
                       </li> 
+                      
                   </ul>
                   <button type="button absolute"  class="button warning"> Contact Us</button>
     
@@ -247,7 +256,7 @@
                                     <input name="size" type="radio" class="form__radio-input" id="small">
                                     <label for="small" class="form__radio-label">
                                         <span class="form__radio-button"> </span>
-                                            small tour group
+                                            small tour sdcvjvszcvadhbiwlcj cuvlwe group
                                         
                                     </label>
                                 </div>
@@ -302,5 +311,6 @@
         </div>
     </footer>
     <script src="assets/js/app.js"></script>
+   
   </body>
 </html>

@@ -6,21 +6,28 @@ const path = require('path');
 const app = express();
 
 // View engine setup
-app.engine('handlebars', exphbs());
-app.set('view engine', 'handlebars');
+app.engine('html', exphbs());
+app.set('view engine', 'html');
 
-//static folder
-app.use('/dist', express.static(path.join(__dirname,'dist')));
+// Static folder
+app.set('views', path.join(__dirname, 'views'));
 
-//Body Parser Middleware
-app.use(bodyParser.urlencoded({extended: false}));
+// Body Parser Middleware
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+app.use(express.static(path.join(__dirname, 'public')));
+
+
 app.get('/', (req, res) => {
-    res.render('contact');
+    //Retrieve the template data from the HTML .
+    
+    
+    res.render('contacts',);
 });
 
 app.post('/send', (req, res)=> {
+    console.log(req.body);
     const output = `
     <p>You have a new contact request</p>
     <h3> Contact Details </h3>
