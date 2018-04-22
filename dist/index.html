@@ -11,16 +11,16 @@
 
   </head>
   <body>
-    <div class="top-bar" style="height: 40px;">
-      <div class="top-bar-left">
+    <div class="top-bar " style="height: 40px;">
+      <div class="top-bar-left show-for-medium ">
        <ul class="menu">
          <li> <i class="fa fa-instagram" style="font-size: 20px;"></i></li>
          <li> <i class="fa fa-facebook" style="font-size: 20px;"></i></li>
        </ul>
       </div>
-      <div class="top-bar-right">
+      <div class="top-bar-right  ">
         <ul class="menu">
-          <li alt="Quick Contact 443 255 9586"> Quick Contact (443) 255-9586</li>
+          <li class="text-right" alt="Quick Contact 443 255 9586"> Contact: (443) 255-9586</li>
         </ul>
       </div>
     </div>
@@ -72,19 +72,19 @@
               <div class="nav-bar-left">
                 <a class="nav-bar-logo"><img class="logo" src="../assets/Logo.png"></a>
               </div>
-              <div class="nav-bar-right">
+              <div class="nav-bar-right" >
                 <ul class="menu">
-                    <li style="padding-top: 20px;"><a href="index.html">Home</a></li>
-                    <li style="padding-top: 20px;"><a href="index.html">About</a></li>
-                    <li style="padding-top: 20px;"><a href="index.html">Interior</a></li>
-                    <li style="padding-top: 20px;"><a href="index.html">Exterior</a></li>
-                    <li style="padding-top: 20px;"><a href="index.html">Contact</a></li>
-                  <li class="hide-for-small-only" style="padding-top: 20px;"><a href="#">TOUR</a></li>
-                  <li class="hide-for-small-only" style="padding-top: 20px;"><a href="login.html">LOGIN</a></li>
+                    <li class="show-for-large"><a href="index.html">Home</a></li>
+                    <li class="show-for-large"><a href="index.html">About</a></li>
+                    <li class="show-for-large"><a href="index.html">Interior</a></li>
+                    <li class="show-for-large"><a href="index.html">Exterior</a></li>
+                    <li class="show-for-large"><a href="index.html">Contact</a></li>
+                  <li class="show-for-large" ><a href="#">TOUR</a></li>
+                  <li class="show-for-large" ><a href="login.html">LOGIN</a></li>
                   <li>
-                  <li>
-                    <button class="offcanvas-trigger" type="button" data-open="offCanvasRight">
-                      <span class="offcanvas-trigger-text hide-for-small-only">Menu</span>
+                  <li class="hide-for-large" style="height: 12vh;">
+                    <button class="offcanvas-trigger" style="height: 12vh;" type="button" data-open="offCanvasRight">
+                      <span class="offcanvas-trigger-text ">Menu</span>
                       <div class="hamburger">
                         <span class="line"></span>
                         <span class="line"></span>
@@ -100,28 +100,20 @@
     
     
         <header>
-            <div class="orbit relative" role="region" aria-label="Favorite Space Pictures" data-orbit>
-                <ul class="orbit-container ">
-                    <li class="orbit-slide is-active">
-                        <figure class="orbit-figure">
-                          <div class="orbit-image bg-video">
-                              <video class="bg-video" autoplay muted loop>
-                                  <source src="/assets/videos/ariel.mp4" type="video/mp4" alt="video of houses roofs">
-                                  <source src="/assets/videos/ariel.webm" type="video/webm">
-                                      Browser is not supported
-                              </video>
-                          </div>
-                        </figure>
-                      </li>
-                  </ul>
-                  <button type="button absolute"  class="button warning"> Contact Us</button>
+            <div class=" relative" role="region" aria-label="Pictures of Houses" data-orbit>
+                    <figure class=" bg-video">
+                            <video class="bg-video" autoplay muted loop>
+                                <source src="ariel.mp4" type="video/mp4" alt="video of houses roofs">
+                                <source src="ariel.webm" type="video/webm">
+                                    Browser is not supported
+                            </video>
+                        
+                      </figure>
+                  <button type="button"  class="button warning" style="left:50%; transform: translateX(-50%); top:90%;"> Contact Us</button>
     
-                  <div class="header-text absolute grid-x" alt="Text of martellini construction">
-                      <div class="cell large-6 medium-6">
-                          <h2> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus doloribus </h2>
-                          <p>voluptate, perspiciatis, aliquam aspernatur optio nostrum excepturi vero reiciendis, deleniti dolor similique commodi praesentium aperiam incidunt sed architecto pariatur accusantium.</p>    
-                      </div>
-                      <div class="cell large-6 medium-6">
+                  <div class="header-text absolute " alt="Text of martellini construction">
+                    
+                      <div >
                           <h2> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus doloribus </h2>
                           <p>voluptate, perspiciatis, aliquam aspernatur optio nostrum excepturi vero reiciendis, deleniti dolor similique commodi praesentium aperiam incidunt sed architecto pariatur accusantium.</p>
                       </div>
@@ -163,7 +155,7 @@
                                     class="composition__photo composition__photo--p3"
                                     src="assets/images/houses3-lg.jpeg"
                                     alt="Photo of nature">
-                                    <!-- sd
+                                    <!--
                                     <img src="img/nat-1-large.jpg" alt="Photo 1" class="composition__photo composition__photo--p1">
                                     <img src="img/nat-2-large.jpg" alt="Photo 2" class="composition__photo composition__photo--p2">
                                     <img src="img/nat-3-large.jpg" alt="Photo 3" class="composition__photo composition__photo--p3">
@@ -214,52 +206,59 @@
             <p class="text-center" style="color: white; padding: 0 20px; font-size: 22px;"> Integritity is a priority here at Martellini Construction. All of our sales representatives are licensed under MHIC & DLLR. Our contractors also are certified to practice by MHIC. We strive to ensure our workers conduct the up most ethical practices with our clients!</p>
         </section>
         <section class="section-book">
-            <div class="row">
-                <div class="book">
-                    <div class="book__form">
-                        <form action="#" class="form">
-                                <div class="u-center-text u-margin-button-small ">
-                                    <h2 class="heading-secondary ">
-                                            Start Booking Now
-                                    </h2>
-                                </div>
-                            <div class="form_group">
-                                <input type="text" class="form__input" placeholder="Full Name" id="name" required>
-                                <label for="name" class="form__label">Full Name</label>
+                <div class="row">
+                    <div class="book">
+                        <div class="book__form">
                             
-                            </div>
-                            <div class="form__group">
-                                    <input  type="email" class="form__input" placeholder="Email Address" id="email" required>
-                                    <label for="email" class="form__label">Email Address</label>
+                            <form  class="form" method="POST" action="send">
+                                    <div class="u-center-text u-margin-button-small ">
+                                        <h2 class="heading-secondary ">
+                                                Start Booking Now
+                                        </h2>
     
-                            </div>
-                            <div class="form__group">
-                                <!--same name buttons can only select one -->
-                                <div class="form__radio-group">
-                                    <input name="size" type="radio" class="form__radio-input" id="small">
-                                    <label for="small" class="form__radio-label">
-                                        <span class="form__radio-button"> </span>
-                                            small tour group
-                                        
-                                    </label>
+                                    </div>
+                                <div class="form_group">
+                                    <input name="name" type="text" class="form__input" placeholder="Full Name" id="name" required>
+                                    <label for="name" class="form__label">Full Name</label>
+                                
                                 </div>
-                                <div class="form__radio-group">
-                                        <input name="size" type="radio" class="form__radio-input" id="large">
-                                        <label for="large" class="form__radio-label">
-                                        <span class="form__radio-button"> </span>
-                                                small tour group
-                                        
-                                         </label>
+                                <div class="form__group">
+                                        <input name="email" type="email" class="form__input" placeholder="Email Address" id="email" required>
+                                        <label for="email" class="form__label">Email Address</label>
+        
                                 </div>
-                            </div>
-                            <div class="form__group">
-                                <button class="btn btn--green"> Next Step &rarr;</button>
-                            </div>    
-                        </form>
+                                <div class="form__group">
+                                        <input name="message" type="text" class="form__input" placeholder="description" id="email" required>
+                                        <label for="message" class="form__label">description</label>
+        
+                                </div>
+                                <div class="form__group">
+                                    <!--same name buttons can only select one -->
+                                    <div class="form__radio-group">
+                                        <input name="size" type="radio" class="form__radio-input" id="small">
+                                        <label for="small" class="form__radio-label">
+                                            <span class="form__radio-button"> </span>
+                                                small tour sdcvjvszcvadhbiwlcj cuvlwe group
+                                            
+                                        </label>
+                                    </div>
+                                    <div class="form__radio-group">
+                                            <input name="size" type="radio" class="form__radio-input" id="large">
+                                            <label for="large" class="form__radio-label">
+                                            <span class="form__radio-button"> </span>
+                                                    small tour group
+                                            
+                                             </label>
+                                    </div>
+                                </div>
+                                <div class="form__group">
+                                    <button type="submit" > Next Step &rarr;</button>
+                                </div>    
+                            </form>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
       </main>
     
     
@@ -293,6 +292,18 @@
             </div>
         </div>
     </footer>
-    <script src="assets/js/app.js"></script>
+    <div class="popup" id="popup">
+            <div class="popup__content">
+                <div class="popup__left">
+                    &nsbp;
+                </div>
+                <div class="popup__right">
+                    <a href="#section-tours" class="popup__close">&times;</a>
+                    Your message was sent and we will get back with you shortly
+                     <a href="#" class="btn btn--green">Return</a>
+    
+                </div>
+            </div>
+        </div>
   </body>
 </html>

@@ -9,7 +9,7 @@
         -ms-flex-align: center;
             align-items: center;
     background: #2c3840;
-    height: 75px;
+    height: 12vh;
    
   }
   header {
@@ -32,11 +32,6 @@
     color: #a8b8c3;
   }
   
-  @media screen and (max-width: 39.9375em) {
-    .nav-bar {
-      height: 53.57143px;
-    }
-  }
   
   .nav-bar .offcanvas-trigger {
     display: -webkit-flex;
@@ -156,7 +151,7 @@
   }
 
   .header-text {
-    padding: 50px 100px;
+    padding: 50px 3vh;
     display: block;
     color: white;
   }
