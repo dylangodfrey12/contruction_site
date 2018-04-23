@@ -7,7 +7,7 @@
   "description": "Official ZURB Template for Foundation for Sites.",
   "main": "gulpfile.babel.js",
   "scripts": {
-    "start": "main.js",
+    "start": "node main.js",
     "build": "NODE_ENV=production gulp bundle-production-app"
   },
   "author": "ZURB <foundation@zurb.com>",
