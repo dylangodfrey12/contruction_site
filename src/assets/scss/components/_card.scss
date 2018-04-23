@@ -31,14 +31,14 @@
             transform: rotateY(180deg);
 
              &-1 {
-                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark );
+                background-image: linear-gradient(to right bottom, #c4c4c4, steelblue );
             }
             &-2 {
-                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark );
+                background-image: linear-gradient(to right bottom, #c4c4c4, steelblue );
             }
 
             &-3 {
-                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark );
+                background-image: linear-gradient(to right bottom, #c4c4c4, steelblue );
             }
 
 
@@ -61,16 +61,16 @@
         border-top-right-radius: 3px;
         
         &--1 {
-            background-image: linear-gradient(to right bottom, $color-secondary-light, rgba(228, 123, 25, 0.671)),
-                                url(../img/nat-5.jpg);
+            background-image: linear-gradient(to right bottom, #c4c4c4, rgba(62, 68, 146, 0.616)),
+                                url(../images/roof.jpg);
         }
         &--2 {
-            background-image: linear-gradient(to right bottom, $color-primary-light, rgba(128, 0, 128, 0.616)),
-                                url(../img/nat-6.jpg);
+            background-image: linear-gradient(to right bottom, #c4c4c4, rgba(62, 68, 146, 0.616)),
+                                url(../images/roof.jpg);
         }
         &--3 {
-            background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark ),
-                                url(../img/nat-7.jpg);
+            background-image: linear-gradient(to right bottom,  #c4c4c4, rgba(62, 68, 146, 0.616)),
+                                url(../images/roof.jpg);
         }
 
     }
@@ -92,7 +92,7 @@
           -webkit-box-decoration-break: clone;
           box-decoration-break: clone;
         &--1 {
-            background-image: linear-gradient(to right bottom, rgba(yellow, .85), rgba($color-secondary-dark, .85));
+            background-image: linear-gradient(to right bottom, rgba(150, 146, 146, 0.37), rgba(62, 68, 146, 0.616));
         }
         &--2 {
             background-image: linear-gradient(to right bottom, rgba($color-primary-light, .85), rgba(blue, .85));

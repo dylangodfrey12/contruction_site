@@ -1,5 +1,5 @@
 .footer {
-    background-color:rgba(68, 42, 8, 0.527);
+    background-color:darkgrey;
     padding: 4rem 0;
     font-size: 1.4rem;
 
@@ -12,7 +12,6 @@
         margin-bottom: 1rem;
 
         @include respond(tab-port) {
-            max-width: 25rem;
             padding: 0 1.5rem;
         }
     }
