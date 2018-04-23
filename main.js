@@ -5,6 +5,7 @@ const nodemailer = require('nodemailer');
 const path = require('path');
 const app = express();
 var helmet = require('helmet');
+require('dotenv').config();
 // View engine setup
 app.engine('html', exphbs());
 app.set('view engine', 'html');

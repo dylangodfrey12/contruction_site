@@ -5,7 +5,7 @@
   "main": "gulpfile.babel.js",
   "scripts": {
     "start": "gulp",
-    "build": "gulp build --production"
+    "build": "NODE_ENV=production gulp bundle-production-app"
   },
   "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
