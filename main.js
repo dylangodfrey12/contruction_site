@@ -142,5 +142,5 @@ app.post('/email', (req, res)=> {
 });
 
 
-app.listen(3000, () => console.log('Server started...'));
+app.listen(process.env.PORT || 5000)
    
