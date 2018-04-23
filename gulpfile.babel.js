@@ -134,6 +134,7 @@ function images() {
 }
 
 // Start a server with BrowserSync to preview the site in
+/*
 function server(done) {
   browser.init({
     server: PATHS.dist, port: PORT
@@ -146,7 +147,7 @@ function reload(done) {
   browser.reload();
   done();
 }
-
+*/
 // Watch for changes to static assets, pages, Sass, and JavaScript
 function watch() {
   gulp.watch(PATHS.assets, copy);
