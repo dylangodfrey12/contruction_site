@@ -4,12 +4,13 @@
   "engines": {
     "node": "8.9.1"
   },
-  "description": "",
+  "description": "Official ZURB Template for Foundation for Sites.",
   "main": "gulpfile.babel.js",
   "scripts": {
-    
+    "start": "gulp",
+    "build": "NODE_ENV=production gulp bundle-production-app"
   },
-  "author": "Dylan Godfrey",
+  "author": "ZURB <foundation@zurb.com>",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.2",
