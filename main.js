@@ -4,7 +4,7 @@ const exphbs = require('express-handlebars');
 const nodemailer = require('nodemailer');
 const path = require('path');
 const app = express();
-
+var helmet = require('helmet');
 // View engine setup
 app.engine('html', exphbs());
 app.set('view engine', 'html');
@@ -18,7 +18,7 @@ app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-
+app.use(helmet());
 app.get('/', (req, res) => {
     //Retrieve the template data from the HTML .
     
