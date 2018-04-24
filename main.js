@@ -4,6 +4,7 @@ const exphbs = require('express-handlebars');
 const nodemailer = require('nodemailer');
 const path = require('path');
 const app = express();
+var port = process.env.PORT;
 var helmet = require('helmet');
 require('dotenv').config();
 // View engine setup
@@ -142,5 +143,7 @@ app.post('/email', (req, res)=> {
 });
 
 
-app.listen(process.env.PORT || 5000)
+app.listen(port || 5000, function(){
+    console.log(`running on port 5000`);
+});
    
