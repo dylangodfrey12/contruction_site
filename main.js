@@ -48,13 +48,14 @@ app.get('/contact', (req, res) => {
 app.post('/send', (req, res)=> {
     console.log(req.body);
     const output = `
-    <p>You have a new contact request</p>
+    <p>Quote Request for Martellini</p>
     <h3> Contact Details </h3>
     <ul>
         <li> Name: ${req.body.name}</li>
-        <li> Name: ${req.body.email}</li>
+        <li> email: ${req.body.email}</li>
+        <li> number: ${req.body.number}</li>
     </ul>
-    <h3> Message </h3>
+    <h3> Message by Potential Client </h3>
     <p>${req.body.message}</p>
     `;
        // create reusable transporter object using the default SMTP transport
@@ -62,8 +63,8 @@ app.post('/send', (req, res)=> {
         service: 'gmail',
         
         auth: {
-            user: 'dylangodfrey12@gmail.com', // generated ethereal user
-            pass: 'austin12' // generated ethereal password
+            user: 'dylangodfrey123@gmail.com', // generated ethereal user
+            pass: 'fearmes12' // generated ethereal password
         },
         tls:{
             rejectUnauthorized: false
@@ -72,10 +73,10 @@ app.post('/send', (req, res)=> {
 
     // setup email data with unicode symbols
     let mailOptions = {
-        from: '"NodeMailer" <dylangodfrey12@gmail.com>', // sender address
-        to: 'dylangodfrey12@gmail.com', // list of receivers
-        subject: 'Hello ✔', // Subject line
-        text: 'Hello world?', // plain text body
+        from: '"Martellini Construction " <dylangodfrey123@gmail.com>', // sender address
+        to: 'dylangodfrey123@gmail.com,joseph.damiba@martelliniconstruction.com,Sasha@martelliniconstruction.com,Aaron.kramer@martelliniconstruction.com', // list of receivers
+        subject: 'This is a test for Quote', // Subject line
+        text: 'Test for Quote', // plain text body
         html: output // html body
     };
 
@@ -96,14 +97,14 @@ app.post('/send', (req, res)=> {
 app.post('/email', (req, res)=> {
     console.log(req.body);
     const output = `
-    <p>You have a new contact request</p>
+    <p>Quote Request for Martellini</p>
     <h3> Contact Details </h3>
     <ul>
         <li> Name: ${req.body.name}</li>
-        <li> Name: ${req.body.email}</li>
-        <li> Name: ${req.body.number}</li>
+        <li> email: ${req.body.email}</li>
+        <li> number: ${req.body.number}</li>
     </ul>
-    <h3> Message </h3>
+    <h3> Message by Potential Client: </h3>
     <p>${req.body.message}</p>
     `;
        // create reusable transporter object using the default SMTP transport
@@ -111,8 +112,8 @@ app.post('/email', (req, res)=> {
         service: 'gmail',
         
         auth: {
-            user: 'dylangodfrey12@gmail.com', // generated ethereal user
-            pass: 'austin12' // generated ethereal password
+            user: 'dylangodfrey123@gmail.com', // generated ethereal user
+            pass: 'fearmes12' // generated ethereal password
         },
         tls:{
             rejectUnauthorized: false
@@ -121,10 +122,10 @@ app.post('/email', (req, res)=> {
 
     // setup email data with unicode symbols
     let mailOptions = {
-        from: '"NodeMailer" <dylangodfrey12@gmail.com>', // sender address
-        to: 'dylangodfrey12@gmail.com', // list of receivers
-        subject: 'Hello ✔', // Subject line
-        text: 'Hello world?', // plain text body
+        from: '"Martellini Construction" <dylangodfrey123@gmail.com>', // sender address
+        to: 'dylangodfrey123@gmail.com,joseph.damiba@martelliniconstruction.com,Sasha@martelliniconstruction.com,Aaron.kramer@martelliniconstruction.com', // list of receivers
+        subject: 'Quote Request', // Subject line
+        text: 'View Details', // plain text body
         html: output // html body
     };
 
